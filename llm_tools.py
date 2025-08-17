@@ -1,6 +1,6 @@
 import os
 
-OPENAI_API_KEY = os.environ.get("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")
+OPENAI_API_KEY = os.environ.get("YOUR_OPENAI_API_KEY")
 
 def ask_llm(prompt: str) -> str:
     """Ask OpenAI if key is present, otherwise return a simple heuristic response."""
@@ -19,3 +19,4 @@ def ask_llm(prompt: str) -> str:
         return resp["choices"][0]["message"]["content"].strip()
     except Exception as e:
         return f"LLM call failed: {e}"
+
