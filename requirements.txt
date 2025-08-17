@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pandas
+matplotlib
+requests
+beautifulsoup4
+duckdb
+pyarrow
+pillow
+openai
+python-multipart
